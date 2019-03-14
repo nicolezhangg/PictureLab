@@ -55,6 +55,16 @@ public class PictureTester
     temple.mirrorTemple();
     temple.explore();
   }
+  public static void testcopy()
+  {
+    Picture temple = new Picture("thruDoor.jpg");
+    temple.explore();
+    Picture flower = new Picture("water.jpg");
+    temple.copy(flower,10,10,200,200,250,250);
+    //temple.copy(flower,100,100);
+    temple.explore();
+  }
+  
   
   /** Method to test the collage method */
   public static void testCollage()
@@ -63,6 +73,7 @@ public class PictureTester
     canvas.createCollage();
     canvas.explore();
   }
+  
   
   /** Method to test edgeDetection */
   public static void testEdgeDetection()
@@ -94,8 +105,9 @@ public class PictureTester
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
-    testCollage();
+    //testCollage();
     //testCopy();
+    testcopy();
     //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
