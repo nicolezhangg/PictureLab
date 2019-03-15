@@ -57,12 +57,17 @@ public class PictureTester
   }
   public static void testcopy()
   {
-    Picture temple = new Picture("thruDoor.jpg");
-    temple.explore();
-    Picture flower = new Picture("water.jpg");
-    temple.copy(flower,10,10,200,200,250,250);
+    Picture ocean = new Picture("beach.jpg");
+    Picture louisXVI = new Picture("snowman.JPG");
+    //ocean.copy(louisXVI,10,10,60,160,180,230);
+    Picture flower = new Picture("flower1.JPG");
+    //ocean.copy(flower, 50,100);
+    ocean.explore();
+    //before:
+   // Picture flower = new Picture("water.jpg");
+    //temple.copy(flower,10,10,200,200,250,250);
     //temple.copy(flower,100,100);
-    temple.explore();
+    //temple.explore();
   }
   
   
@@ -79,7 +84,7 @@ public class PictureTester
   public static void testEdgeDetection()
   {
     Picture swan = new Picture("swan.jpg");
-    swan.edgeDetection(10);
+    swan.edgeDetection(5);
     swan.explore();
   }
   
@@ -107,8 +112,8 @@ public class PictureTester
     //testMirrorDiagonal();
     //testCollage();
     //testCopy();
-    testcopy();
-    //testEdgeDetection();
+    //testcopy();
+    testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
